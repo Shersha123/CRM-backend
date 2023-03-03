@@ -131,7 +131,7 @@ app.post("/sendpasswordlink", async (req, res) => {
           from: process.env.EMAIL,
           to: req.body.email,
           subject: "Sending Email For password Reset",
-          html: `<b>Please <a href='https://crmapp-ecom.netlify.app/verify-user/${setrandomnum.value._id}/${randomnum}'> Click here</a> to reset your password</b>`,
+          html: `<b>Please <a href='https://effulgent-taffy-beb406.netlify.app/verify-user/${setrandomnum.value._id}/${randomnum}'> Click here</a> to reset your password</b>`,
         };
         transporter.sendMail(mailOptions, (error, info) => {
           if (error) {
